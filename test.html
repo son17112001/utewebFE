@@ -80,16 +80,8 @@
         <div id="main">
             <div class="month" id="reminder">
                 <ul>
-                    <li class="prev">
-                        <!--FIXME-->
-                        <!-- <button class="btn btn-outline-primary col-sm-6" id="previous" onclick="previous()">&#10094;</button> -->
-                        <button class="btn col-sm-6" id="previous" onclick="previous()">&#10094;</button>
-                    </li>
-                    <li class="next">
-                        <!--FIXME-->
-                        <!-- <button class="btn btn-outline-primary col-sm-6" id="next" onclick="next()">&#10095;</button> -->
-                        <button class="btn col-sm-6" id="next" onclick="next()">&#10095;</button>
-                    </li>
+                    <li class="prev" style="cursor:pointer;" onclick="next()">&#10094;</li>
+                    <li class="next" style="cursor:pointer;" onclick="previous()">&#10095;</li>
                     <!-- <li>May<br /><span style="font-size: 18px">2022</span></li> -->
                     <li id="monthAndYear" style="font-size: 20px"></li>
                 </ul>

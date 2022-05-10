@@ -5,7 +5,7 @@
 }
 
 :root {
-  --blue: #3e4095;
+  --blue1: #3e4095;
   --white: #ffffff;
   --red: #bf525f;
   --red1: #9f446c;
@@ -141,7 +141,7 @@
   text-align: center;
   font-size: 21px;
   padding: 10px 0 10px 0;
-  background-color: var(--blue);
+  background-color: var(--blue1);
 }
 .side-logo-hcmute{
     position: sticky;
@@ -180,7 +180,7 @@ body {font-family: Verdana, sans-serif;}
 .month {
   padding: 10px 25px;
   width: 100%;
-  background: var(--blue);
+  background: var(--blue1);
   text-align: center;
 }
 
