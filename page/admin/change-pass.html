@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/asset/css/styles.css" />
+    <link rel="icon" href="/asset/image/logo.png" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>PRESS AN MEDIA OFFICE</title>
+  </head>
+
+  <body>
+    <!--------------------------------- HEADER OPEN --------------------------->
+    <div class="header" style="cursor: default" id="main-header">
+      <a class="logo">LỊCH ĐĂNG KÍ SỬ DỤNG ĐỊA ĐIỂM</a>
+      <div class="header-right">
+        <a class="active" id="login" href="/page/login.html">Đăng nhập</a>
+        <button style="display: none" id="myBtn">Open Modal</button>
+      </div>
+    </div>
+    <!--------------------------------- HEADER CLOSE --------------------------->
+
+    <!--------------------------------- HEADER CLOSE --------------------------->
+
+    <div id="mySidenav" class="sidenav">
+      <div class="side-tag">
+        <p class="tag-name">DANH MỤC</p>
+      </div>
+    </div>
+    <div class="side-logo-hcmute">
+      <img src="/asset/image/logo.png " style="width: 95px" alt="HCMUTE " />
+    </div>
+    <div class="side-logo-pmo">
+      <img src="/asset/image/pmo.png " style="width: 100px" alt="HCMUTE " />
+    </div>
+
+    <div id="main "> 
+
+    </div>
+    <script>
+
+var open = false;
+var current = 0;
+var first = false;
+var again = false;
+
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+
+openNav();
+
+const element = document.getElementById("main");
+
+let nodes1 = element.getElementsByClassName("day");
+let nodes2 = element.getElementsByClassName("date");
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "235px";
+  document.getElementById("main-header").style.marginLeft = "250px";
+  // document.getElementsByClassName("date")[].style.="0.5em"
+  // document.getElementsByClassName("date")[].style.="0.5em"
+
+  for (let i = 0; i < nodes2.length; i++) {
+    nodes[i].style.paddingBottom = "110%";
+  }
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("main-header").style.marginLeft = "0";
+  for (let i = 0; i < nodes.length; i++) {
+    nodes[i].style.maxHeight = "3.5em";
+  }
+}
+
+    </script>
+  </body>
+</html>

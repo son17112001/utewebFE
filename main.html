@@ -1,167 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <link rel="stylesheet" href="/asset/css/styles.css" />
     <link rel="icon" href="/asset/image/logo.png" type="image/icon type" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>PRESS AN MEDIA OFFICE</title>
-  </head>
-  <body>
-    
+</head>
+
+<body>
+
     <!--------------------------------- HEADER OPEN --------------------------->
     <div class="header" style="cursor:default;" id="main-header">
-      <!-- <span style="font-size: 30px; cursor: pointer" onclick="react()"
+        <!-- <span style="font-size: 30px; cursor: pointer" onclick="react()"
         >&#9776;
       </span> -->
-      <a   class="logo">LỊCH ĐĂNG KÍ SỬ DỤNG ĐỊA ĐIỂM</a>
-      <div class="header-right">
-        <a class="active" id="login" href="/page/login.html">Đăng nhập</a>
-        <button style="display: none;" id="myBtn">Open Modal</button>
-        <!-- <button id="myBtn">Open Modal</button> -->
-      </div>
+        <a class="logo">LỊCH ĐĂNG KÍ SỬ DỤNG ĐỊA ĐIỂM</a>
+        <div class="header-right">
+            <a class="active" id="login" href="/page/login.html">Đăng nhập</a>
+            <button style="display: none;" id="myBtn">Open Modal</button>
+            <!-- <button id="myBtn">Open Modal</button> -->
+        </div>
     </div>
 
-   <!-- The Modal -->
-<div id="myModal" class="modal">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-      <h2>CHI TIẾT MƯỢN</h2>
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>CHI TIẾT MƯỢN</h2>
+            </div>
+            <div class="modal-body">
+                <table id="customers">
+
+                    <tr>
+                        <td>Người mượn</td>
+                        <td>Đàng Quang Vắng</td>
+
+                    </tr>
+                    <tr>
+                        <td>Điện thoại</td>
+                        <td>0913162119</td>
+
+                    </tr>
+                    <tr>
+                        <td>Chuyên mục</td>
+                        <td>Hội Trường</td>
+
+                    </tr>
+                    <tr>
+                        <td>Thời gian đăng ký</td>
+                        <td>15:09 - 20/04/2022</td>
+
+                    </tr>
+                    <tr>
+                        <td>Thời gian mượn</td>
+                        <td>07:30 - 27/04/2022</td>
+
+                    </tr>
+                    <tr>
+                        <td>Thời gian trả</td>
+                        <td>11:30 - 27/04/2022</td>
+
+                    </tr>
+                    <tr>
+                        <td>Nội dung</td>
+                        <td>Tổ chức đối thoại sinh viên cấp Khoa theo Kế hoạch chung của trường số 419 về việc đối thoại sinh viên Học kỳ 2 năm học 2021-2022. Thời gian mượn hội trường: Từ 7h30 đến 11g30 thứ 4 ngày 27/4/2022.</td>
+
+                    </tr>
+                    <tr>
+                        <td>Xác nhận lúc</td>
+                        <td>15:50:12 - 20/04/2022</td>
+
+                    </tr>
+                    <tr>
+                        <td>Người trực</td>
+                        <td>Phạm Khoa Thành</td>
+
+                    </tr>
+                    <tr>
+                        <td>Điện Thoại liên hệ</td>
+                        <td>0918060278</td>
+
+                    </tr>
+                    <tr>
+                        <td>Mail liên hệ</td>
+                        <td>thanhpk@hcmute.edu.vn</td>
+
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
     </div>
-    <div class="modal-body">
-      <table id="customers">
-        
-        <tr>
-          <td>Người mượn</td>
-          <td>Đàng Quang Vắng</td>
-          
-        </tr>
-        <tr>
-          <td>Điện thoại</td>
-          <td>0913162119</td>
-         
-        </tr>
-        <tr>
-          <td>Chuyên mục</td>
-          <td>Hội Trường</td>
-         
-        </tr>
-        <tr>
-          <td>Thời gian đăng ký</td>
-          <td>15:09 - 20/04/2022</td>
-          
-        </tr>
-        <tr>
-          <td>Thời gian mượn</td>
-          <td>07:30 - 27/04/2022</td>
-          
-        </tr>
-        <tr>
-          <td>Thời gian trả</td>
-          <td>11:30 - 27/04/2022</td>
-         
-        </tr>
-        <tr>
-          <td>Nội dung</td>
-          <td>Tổ chức đối thoại sinh viên cấp Khoa theo Kế hoạch chung của trường số 419 về việc đối thoại sinh viên Học kỳ 2 năm học 2021-2022. Thời gian mượn hội trường: Từ 7h30 đến 11g30 thứ 4 ngày 27/4/2022.</td>
-          
-        </tr>
-        <tr>
-          <td>Xác nhận lúc</td>
-          <td>15:50:12 - 20/04/2022</td>
-          
-        </tr>
-        <tr>
-          <td>Người trực</td>
-          <td>Phạm Khoa Thành</td>
-        
-        </tr>
-        <tr>
-          <td>Điện Thoại liên hệ</td>
-          <td>0918060278</td>
-        
-        </tr>
-        <tr>
-          <td>Mail liên hệ</td>
-          <td>thanhpk@hcmute.edu.vn</td>
-        
-        </tr>
-      </table>
-    </div>
-   
-  </div>
 
-</div>
-
-<!-- Trigger/Open The Modal -->
+    <!-- Trigger/Open The Modal -->
 
 
     <!--------------------------------- HEADER CLOSE --------------------------->
 
     <div id="mySidenav" class="sidenav">
-      
+
         <div class="side-tag" ">
-            <p class="tag-name">DANH MỤC</p>
+            <p class="tag-name ">DANH MỤC</p>
         </div>
         
-        <div class="side-sub">
-            <span class="side-item" style="background-color: var(--red);">
-                <span style="padding-right: 91px;">HỘI TRƯỜNG</span>
+        <div class="side-sub ">
+            <span class="side-item " style="background-color: var(--red); ">
+                <span style="padding-right: 91px; ">HỘI TRƯỜNG</span>
             </span>
             
         </div>
 
-        <div class="side-sub">
+        <div class="side-sub ">
           
-            <span class="side-item" style="background-color: var(--red1);"">
-                
-                <span>SẢNH TRUNG TÂM</span>
+            <span class="side-item " style="background-color: var(--red1); "">
+
+            <span>SẢNH TRUNG TÂM</span>
             </span>
 
         </div>
 
         <div class="side-sub">
-        
- <span class="side-item" style="background-color: var(--orange);"">
+
+            <span class="side-item" style="background-color: var(--orange);" ">
                 
-    <span style="padding-right: 148px;">UTEx</span>
+    <span style="padding-right: 148px; ">UTEx</span>
 </span>
             
         </div>
-        <div class="side-logo-hcmute">
-            <img src="/asset/image/logo.png" style="width:95px"  alt="HCMUTE">
+        <div class="side-logo-hcmute ">
+            <img src="/asset/image/logo.png " style="width:95px "  alt="HCMUTE ">
             
         </div>
-        <div class="side-logo-pmo">
-          <img src="/asset/image/pmo.png" style="width:100px"  alt="HCMUTE">
+        <div class="side-logo-pmo ">
+          <img src="/asset/image/pmo.png " style="width:100px "  alt="HCMUTE ">
           
       </div>
         
     </div>
 
     <!--------------------------------- SIDE BAR OPEN --------------------------->
-    <div id="main">
-      <div class="month" id="reminder">
+    <div id="main ">
+      <div class="month " id="reminder ">
         <ul>
-          <li class="prev">&#10094;</li>
-          <li class="next">&#10095;</li>
-          <li>May<br /><span style="font-size: 18px">2022</span></li>
+          <li class="prev ">&#10094;</li>
+          <li class="next ">&#10095;</li>
+          <li>May<br /><span style="font-size: 18px ">2022</span></li>
         </ul>
       </div>
 
-      <table class="timetable" style="margin: auto">
+      <table class="timetable " style="margin: auto ">
         <thead>
           <tr>
             <th>Monday</th>
@@ -174,175 +170,174 @@
           </tr>
         </thead>
         <tr>
-          <td class="none-day" id="1" >
-            <span class="date"> 25 </span>
+          <td class="none-day " id="1 " >
+            <span class="date "> 25 </span>
           </td>
 
-          <td class="none-day" id="2" >
-            <span class="date">26</span>
+          <td class="none-day " id="2 " >
+            <span class="date ">26</span>
           </td>
-          <td class="none-day" id="3" >
-            <span class="date">27</span>
+          <td class="none-day " id="3 " >
+            <span class="date ">27</span>
           </td>
-          <td class="none-day" id="4" >
-            <span class="date">28</span>
+          <td class="none-day " id="4 " >
+            <span class="date ">28</span>
           </td>
-          <td class="none-day" id="5"  >
-            <span class="date">29</span>
+          <td class="none-day " id="5 "  >
+            <span class="date ">29</span>
           </td>
-          <td class="none-day"  id="6" >
-            <span class="date">30
-              <span class="special-day">Giải Phóng miền nam</span>
+          <td class="none-day "  id="6 " >
+            <span class="date ">30
+              <span class="special-day ">Giải Phóng miền nam</span>
             </span>
             
           </td>
-          <td class="weekend day" id="7" >
-            <span class="date"> 1 
-              <span class="special-day">Quốc tế lao động</span>
+          <td class="weekend day " id="7 " >
+            <span class="date "> 1 
+              <span class="special-day ">Quốc tế lao động</span>
             </span>
           </td>
         </tr>
         <tr>
-          <td id="8" >
-            <span class="date">2</span>
+          <td id="8 " >
+            <span class="date ">2</span>
           </td>
-          <td id="9" >
-            <span class="date">
+          <td id="9 " >
+            <span class="date ">
               3
               <ul>
-                <li class="reminder">
-                  <div class="memo">
-                    <!-- <span class="time">7:30am-9:00am</span>
-                    <div class="event">[QHDN] Tổ chức Career ...</div> -->
-                    <div class="person">Từ: 7:00 -12:00</div>
-                    <div class="person">Hội trường</div>
-                    <div class="person">Phan Công Đức</div>
+                <li class="reminder ">
+                  <div class="memo ">
+                    <!-- <span class="time ">7:30am-9:00am</span>
+                    <div class="event ">[QHDN] Tổ chức Career ...</div> -->
+                    <div class="person ">Từ: 7:00 -12:00</div>
+                    <div class="person ">Hội trường</div>
+                    <div class="person ">Phan Công Đức</div>
                   </div>
                 </li>
 
-                <li class="reminder">
-                  <div class="memo">
-                    <!-- <span class="time">13:00pm-17:00pm</span>
+                <li class="reminder ">
+                  <div class="memo ">
+                    <!-- <span class="time ">13:00pm-17:00pm</span>
+                    <div class="event ">
+                      Chung kết cuộc thi "Phong cách Cán ... </div> -->
+            <div class="person">Từ: 7:00 -12:00</div>
+            <div class="person">Hội trường</div>
+            <div class="person">Bùi Xuân Dũng</div>
+        </div>
+        </li>
+        <li class="reminder">
+            <div class="memo">
+                <!-- <span class="time">13:00pm-17:00pm</span>
                     <div class="event">
                       Chung kết cuộc thi "Phong cách Cán ...
                     </div> -->
-                    <div class="person">Từ: 7:00 -12:00</div>
-                    <div class="person">Hội trường</div>
-                    <div class="person">Bùi Xuân Dũng</div>
-                  </div>
-                </li>
-                <li class="reminder">
-                  <div class="memo">
-                    <!-- <span class="time">13:00pm-17:00pm</span>
-                    <div class="event">
-                      Chung kết cuộc thi "Phong cách Cán ...
-                    </div> -->
-                    <div class="person">Từ: 7:00 -12:00</div>
-                    <div class="person">Hội trường</div>
-                    <div class="person">Bùi Xuân Dũng</div>
-                  </div>
-                </li>
-              </ul>
-            </span>
-          </td>
-          <td id="10" >
+                <div class="person">Từ: 7:00 -12:00</div>
+                <div class="person">Hội trường</div>
+                <div class="person">Bùi Xuân Dũng</div>
+            </div>
+        </li>
+        </ul>
+        </span>
+        </td>
+        <td id="10">
             <span class="date">4 </span>
-          </td>
-          <td id="11" >
+        </td>
+        <td id="11">
             <span class="date">5 </span>
-          </td>
-          <td id="12" >
+        </td>
+        <td id="12">
             <span class="date">6</span>
-          </td>
-          <td class="weekend" id="13" >
+        </td>
+        <td class="weekend" id="13">
             <span class="date">7</span>
-          </td>
-          <td class="weekend" id="14" >
+        </td>
+        <td class="weekend" id="14">
             <span class="date">8</span>
-          </td>
+        </td>
         </tr>
         <tr>
-          <td id="15" >
-            <span class="date">9</span>
-          </td>
-          <td id="16" class="current-day" >
-            <span class="date">10</span>
-          </td>
-          <td id="17" >
-            <span class="date">11</span>
-          </td>
-          <td  id="18" >
-            <span class="date">12</span>
-          </td>
-          <td id="19" >
-            <span class="date">13</span>
-          </td>
-          <td class="weekend" id="20" >
-            <span class="date">
+            <td id="15">
+                <span class="date">9</span>
+            </td>
+            <td id="16" class="current-day">
+                <span class="date">10</span>
+            </td>
+            <td id="17">
+                <span class="date">11</span>
+            </td>
+            <td id="18">
+                <span class="date">12</span>
+            </td>
+            <td id="19">
+                <span class="date">13</span>
+            </td>
+            <td class="weekend" id="20">
+                <span class="date">
               14
               <ul>
                 <li class="reminder">
                   <div class="memo">
                     <!-- <span class="time">7:30am-9:00am</span>
-                    <div class="event">[QHDN] Tổ chức Career ...</div> -->
-                    <div class="person">Từ: 7:00 -12:00</div>
-                    <div class="person">Hội trường</div>
-                    <div class="person">Phan Công Đức</div>
-                  </div>
-                </li>
-              </ul>
-            </span>
-          </td>
-          <td class="weekend" id="21" >
-            <span class="date">15</span>
-          </td>
-        </tr>
-        <tr>
-          <td id="22" >
+                <div class="event">[QHDN] Tổ chức Career ...</div> -->
+                <div class="person">Từ: 7:00 -12:00</div>
+                <div class="person">Hội trường</div>
+                <div class="person">Phan Công Đức</div>
+    </div>
+    </li>
+    </ul>
+    </span>
+    </td>
+    <td class="weekend" id="21">
+        <span class="date">15</span>
+    </td>
+    </tr>
+    <tr>
+        <td id="22">
             <span class="date">16</span>
-          </td>
-          <td id="23" >
+        </td>
+        <td id="23">
             <span class="date">17</span>
-          </td>
-          <td id="24" >
+        </td>
+        <td id="24">
             <span class="date">18</span>
-          </td>
-          <td id="25" >
+        </td>
+        <td id="25">
             <span class="date">19</span>
-          </td>
-          <td  id="26" >
+        </td>
+        <td id="26">
             <span class="date">20</span>
-          </td>
-          <td class="weekend" id="27" >
+        </td>
+        <td class="weekend" id="27">
             <span class="date">21</span>
-          </td>
-          <td class="weekend" id="28" >
+        </td>
+        <td class="weekend" id="28">
             <span class="date">22 </span>
-          </td>
-        </tr>
-        <tr>
-          <td id="29" >
+        </td>
+    </tr>
+    <tr>
+        <td id="29">
             <span class="date">23</span>
-          </td>
-          <td id="30" >
+        </td>
+        <td id="30">
             <span class="date">24</span>
-          </td>
-          <td id="31" >
+        </td>
+        <td id="31">
             <span class="date">
               25
               <ul>
                 <li class="reminder">
                   <div class="memo">
                     <!-- <span class="time">13:00pm-17:00pm</span>
-                    <div class="event">
-                      Chung kết cuộc thi "Phong cách Cán asdsa dasda daasd sads adds.
-                    </div> -->
-                    
-                    <div class="person">Bùi Xuân Dũng</div>
-                  </div>
-                </li>
-                <li class="reminder">
-                  <div class="memo">
+            <div class="event">
+                Chung kết cuộc thi "Phong cách Cán asdsa dasda daasd sads adds.
+            </div> -->
+
+            <div class="person">Bùi Xuân Dũng</div>
+            </div>
+            </li>
+            <li class="reminder">
+                <div class="memo">
                     <!-- <span class="time">13:00pm-17:00pm</span>
                     <div class="event">
                       Chung kết cuộc thi "Phong cách Cán asdsa dasda daasd sads adds.
@@ -350,169 +345,170 @@
                     <div class="person">Từ: 7:00 -12:00</div>
                     <div class="person">Hội trường</div>
                     <div class="person">Bùi Xuân Dũng</div>
-                  </div>
-                </li>
-                <li class="reminder">
-                  <div class="memo">
+                </div>
+            </li>
+            <li class="reminder">
+                <div class="memo">
                     <span class="time">13:00pm-17:00pm</span>
                     <div class="event">
-                      Chung kết cuộc thi "Phong cách Cán asdsa dasda daasd sads adds.
+                        Chung kết cuộc thi "Phong cách Cán asdsa dasda daasd sads adds.
                     </div>
                     <div class="person">Bùi Xuân Dũng</div>
-                  </div>
-                </li>
-              </ul>
+                </div>
+            </li>
+            </ul>
             </span>
-          </td>
-          <td id="32" >
+        </td>
+        <td id="32">
             <span class="date">26</span>
-          </td>
-          <td id="33" >
+        </td>
+        <td id="33">
             <span class="date">27</span>
-          </td>
-          <td class="weekend" id="34" >
+        </td>
+        <td class="weekend" id="34">
             <span class="date">28</span>
-          </td>
-          <td class="weekend" id="35" >
+        </td>
+        <td class="weekend" id="35">
             <span class="date">29</span>
-          </td>
-        </tr>
-        <tr>
-          <td id="36"  >
+        </td>
+    </tr>
+    <tr>
+        <td id="36">
             <span class="date">30</span>
-          </td>
-          <td id="37"  >
+        </td>
+        <td id="37">
             <span class="date">31</span>
-          </td>
-          <td class="none-day" id="38"  >
+        </td>
+        <td class="none-day" id="38">
             <span class="date">1
               
                 <span class="special-day">Quốc tế thiếu nhi</span>
-              
+
             </span>
-          </td>
-          <td class="none-day" id="39"  > 
+        </td>
+        <td class="none-day" id="39">
             <span class="date">2</span>
-          </td>
-          <td class="none-day" id="40" >
+        </td>
+        <td class="none-day" id="40">
             <span class="date">3</span>
-          </td>
-          <td class="none-day" id="41" >
+        </td>
+        <td class="none-day" id="41">
             <span class="date">4</span>
-          </td>
-          <td class="none-day" id="42" >
+        </td>
+        <td class="none-day" id="42">
             <span class="date">5</span>
-          </td>
-        </tr>
-      </table>
+        </td>
+    </tr>
+    </table>
     </div>
 
     <!--------------------------------- SIDE BAR CLOSE --------------------------->
     <script>
+        var modal = document.getElementById("myModal");
 
-var modal = document.getElementById("myModal");
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-var open = false;
-var current =0
-var first=false
-var again=false
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-// When the user clicks the button, open the modal 
-function toggle(id){
-  modal.style.display = "block";
-}
-window.onload = function() {
-    const elements = document.getElementsByClassName('reminder');
-    
-    for (const element of elements) {
-        element.addEventListener("click", e => {
-          modal.style.display = "block";
-        })
-    }
-}
-      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-     
-      openNav()
-      // function react() {
-      //   if (open) {
-      //     closeNav();
-      //     open = false;
-      //   } else {
-      //     openNav();
-      //     open = true;
-      //   }
-      // }
-      const element = document.getElementById("main");
-      
-      let nodes1 = element.getElementsByClassName("day");
-      let nodes2 = element.getElementsByClassName("date");
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "235px";
-        document.getElementById("main-header").style.marginLeft = "250px";
-        // document.getElementsByClassName("date")[].style.="0.5em"
-        // document.getElementsByClassName("date")[].style.="0.5em"
-        
-        for (let i = 0; i < nodes2.length; i++) {
-          nodes[i].style.paddingBottom = "110%";
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var open = false;
+        var current = 0
+        var first = false
+        var again = false
+            // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
         }
-      }
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-        document.getElementById("main-header").style.marginLeft = "0";
-        for (let i = 0; i < nodes.length; i++) {
-          nodes[i].style.maxHeight = "3.5em";
-        }
-      }
-      // function toggle(id) {
-      //   if(current===0){
-      //       let temp= document.getElementById(id).className
-      //       if(temp!=='none-day'){
-      //           document.getElementById(id).className="current-day"
-      //           current= id
-      //           first=true
-      //       } 
-      //   }
-      //   if(current === id){
-      //       if(!first){                
-      //               document.getElementById(current).className="day"
-      //               first= false
-      //       }
-      //      if(again){
-      //           document.getElementById(current).className="day"
-      //      }
-      //     }else{
-      //       let temp= document.getElementById(id).className
-      //       if(temp!=='none-day'){
-      //         document.getElementById(id).className="current-day"
-      //         document.getElementById(current).className="day"
-      //         current = id
-      //       again=true
-      //       }
-      //     }
-      // }
 
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            // When the user clicks the button, open the modal 
+        function toggle(id) {
+            modal.style.display = "block";
+        }
+        window.onload = function() {
+                const elements = document.getElementsByClassName('reminder');
+
+                for (const element of elements) {
+                    element.addEventListener("click", e => {
+                        modal.style.display = "block";
+                    })
+                }
+            }
+            /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+
+        openNav()
+            // function react() {
+            //   if (open) {
+            //     closeNav();
+            //     open = false;
+            //   } else {
+            //     openNav();
+            //     open = true;
+            //   }
+            // }
+        const element = document.getElementById("main");
+
+        let nodes1 = element.getElementsByClassName("day");
+        let nodes2 = element.getElementsByClassName("date");
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "235px";
+            document.getElementById("main-header").style.marginLeft = "250px";
+            // document.getElementsByClassName("date")[].style.="0.5em"
+            // document.getElementsByClassName("date")[].style.="0.5em"
+
+            for (let i = 0; i < nodes2.length; i++) {
+                nodes[i].style.paddingBottom = "110%";
+            }
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("main-header").style.marginLeft = "0";
+            for (let i = 0; i < nodes.length; i++) {
+                nodes[i].style.maxHeight = "3.5em";
+            }
+        }
+        // function toggle(id) {
+        //   if(current===0){
+        //       let temp= document.getElementById(id).className
+        //       if(temp!=='none-day'){
+        //           document.getElementById(id).className="current-day"
+        //           current= id
+        //           first=true
+        //       } 
+        //   }
+        //   if(current === id){
+        //       if(!first){                
+        //               document.getElementById(current).className="day"
+        //               first= false
+        //       }
+        //      if(again){
+        //           document.getElementById(current).className="day"
+        //      }
+        //     }else{
+        //       let temp= document.getElementById(id).className
+        //       if(temp!=='none-day'){
+        //         document.getElementById(id).className="current-day"
+        //         document.getElementById(current).className="day"
+        //         current = id
+        //       again=true
+        //       }
+        //     }
+        // }
     </script>
-  </body>
+</body>
+
 </html>
