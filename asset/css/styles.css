@@ -127,7 +127,7 @@
 
 .side-sub span :hover {
   background-color:rgb(3, 3, 69);
-  padding: 2px 55px 2px 55px;
+  padding: 3px 55px 3px 55px;
   margin-left: -55px;
   
   cursor: pointer;
@@ -259,7 +259,7 @@ body {font-family: Verdana, sans-serif;}
     height: 0;
     font-size: 1em;
     padding: 0.1em;
-    padding-bottom: 122%;
+    padding-bottom: 86%;
     position: relative;
     border-bottom: 1px solid #dedbdb;
     margin-left: 0.25em;
@@ -319,7 +319,7 @@ body {font-family: Verdana, sans-serif;}
   .memo {
     color: white;
     font-size: smaller;
-    
+    cursor: pointer;
   }
   .person{
     color: white;
@@ -375,3 +375,86 @@ body {font-family: Verdana, sans-serif;}
     margin: 0;
     padding: 0;
   }
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+  
+/* Mobile */
+@media only screen and (max-width: 46.1875em){
+
+}
+/* Table */
+@media only screen and(min-width:46.25em) and (max-width: 63.9375em){
+  #main-header{
+    width: 93%;
+  }
+}
