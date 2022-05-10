@@ -444,9 +444,13 @@ body {font-family: Verdana, sans-serif;}
     width: 100%;
   }
   
+  #customers td{
+    width: 30px !important;
+  }
+
   #customers td, #customers th {
     border: 1px solid #ddd;
-    padding: 8px 0px 8px 0px ;
+    padding: 8px 0px 8px 8px ;
     width: 54px;
   }
   
