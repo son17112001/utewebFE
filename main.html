@@ -19,11 +19,11 @@
   <body>
     
     <!--------------------------------- HEADER OPEN --------------------------->
-    <div class="header" id="main-header">
+    <div class="header" style="cursor:default;" id="main-header">
       <!-- <span style="font-size: 30px; cursor: pointer" onclick="react()"
         >&#9776;
       </span> -->
-      <a href="#default" class="logo">LỊCH ĐĂNG KÍ SỬ DỤNG ĐỊA ĐIỂM</a>
+      <a   class="logo">LỊCH ĐĂNG KÍ SỬ DỤNG ĐỊA ĐIỂM</a>
       <div class="header-right">
         <a class="active" id="login" href="/page/login.html">Đăng nhập</a>
         <button id="myBtn">Open Modal</button>
@@ -38,15 +38,69 @@
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">&times;</span>
-      <h2>Modal Header</h2>
+      <h2>CHI TIẾT MƯỢN</h2>
     </div>
     <div class="modal-body">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text...</p>
+      <table id="customers">
+        
+        <tr>
+          <td>Người mượn :</td>
+          <td>Đàng Quang Vắng</td>
+          
+        </tr>
+        <tr>
+          <td>Điện thoại :</td>
+          <td>0913162119</td>
+         
+        </tr>
+        <tr>
+          <td>Chuyên mục :</td>
+          <td>Hội Trường</td>
+         
+        </tr>
+        <tr>
+          <td>Thời gian đăng ký :</td>
+          <td>15:09 - 20/04/2022</td>
+          
+        </tr>
+        <tr>
+          <td>Thời gian mượn:</td>
+          <td>07:30 - 27/04/2022</td>
+          
+        </tr>
+        <tr>
+          <td>Thời gian trả :</td>
+          <td>11:30 - 27/04/2022</td>
+         
+        </tr>
+        <tr>
+          <td>Nội dung</td>
+          <td>Tổ chức đối thoại sinh viên cấp Khoa theo Kế hoạch chung của trường số 419 về việc đối thoại sinh viên Học kỳ 2 năm học 2021-2022. Thời gian mượn hội trường: Từ 7h30 đến 11g30 thứ 4 ngày 27/4/2022.</td>
+          
+        </tr>
+        <tr>
+          <td>Xác nhận lúc :</td>
+          <td>15:50:12 - 20/04/2022</td>
+          
+        </tr>
+        <tr>
+          <td>Người trực :</td>
+          <td>Phạm Khoa Thành</td>
+        
+        </tr>
+        <tr>
+          <td>Điện Thoại liên hệ :</td>
+          <td>0918060278</td>
+        
+        </tr>
+        <tr>
+          <td>Mail liên hệ :</td>
+          <td>thanhpk@hcmute.edu.vn</td>
+        
+        </tr>
+      </table>
     </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
-    </div>
+   
   </div>
 
 </div>
@@ -380,6 +434,9 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+function toggle(id){
+  modal.style.display = "block";
+}
       /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
       var open = false;
       var current =0
@@ -396,18 +453,16 @@ window.onclick = function(event) {
       //   }
       // }
       const element = document.getElementById("main");
-      let nodes = element.getElementsByClassName("reminder");
+      
       let nodes1 = element.getElementsByClassName("day");
       let nodes2 = element.getElementsByClassName("date");
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("main").style.marginLeft = "235px";
         document.getElementById("main-header").style.marginLeft = "250px";
         // document.getElementsByClassName("date")[].style.="0.5em"
         // document.getElementsByClassName("date")[].style.="0.5em"
-        for (let i = 0; i < nodes.length; i++) {
-          nodes[i].style.maxHeight = "2.3em";
-        }
+        
         for (let i = 0; i < nodes2.length; i++) {
           nodes[i].style.paddingBottom = "110%";
         }
@@ -460,6 +515,7 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
   modal.style.display = "block";
 }
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
