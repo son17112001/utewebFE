@@ -83,7 +83,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
 .sidenav a {
@@ -140,23 +140,23 @@
   color: white;
   text-align: center;
   font-size: 21px;
-  padding: 10px 0 10px 0;
+  padding: 0px 0 10px 0;
   background-color: var(--blue1);
 }
 .side-logo-hcmute{
     position: sticky;
-    top: 505px;
+    top: 5px;
     left: 20px;
     display: inline-block;
 }
 .side-logo-pmo{
   position: sticky;
-  top: 500px;
+  top: 0px;
   left: 135px;
   display: inline-block;
 }
 .side-logo img{
-    display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
