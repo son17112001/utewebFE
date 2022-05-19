@@ -347,7 +347,7 @@
   
   /* -----------------------------------------------SIDE NAV----------------------------------------------------------- */
   
-  .button {
+  .button1 {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -366,7 +366,7 @@
     color: var(--blue1); 
     border: 2px solid var(--blue1);
     border-radius: 2%;
-    margin-left: 0.4em;
+    margin-left: 2%;
   }
   
   .button2:hover {
@@ -375,159 +375,42 @@
     color: white;
   }
 
-
-  
- 
-  
-  
-  
- 
-  .face {
-    position: absolute;
-    width: 250px;
-    height: 350px;
-    padding: 20px;
-    background: rgba(250, 250, 250, 0.96);
-    border: 3px solid var(--blue1);
-    border-radius: 3px;
-  }
-  .face .content {
-    color: #666;
-  }
-  .face .content h2 {
-    font-size: 1.2em;
-    color: var(--blue1);
-  }
-  .face .content .field-wrapper {
-    margin-top: 30px;
-    position: relative;
-  }
-  .face .content .field-wrapper label {
-    position: absolute;
-    pointer-events: none;
-    font-size: 0.85em;
-    top: 40%;
-    left: 0;
-    transform: translateY(-50%);
-    transition: all ease-in 0.25s;
-    color: #999999;
-  }
-  .face .content .field-wrapper input[type=text], .face .content .field-wrapper input[type=password], .face .content .field-wrapper input[type=submit], .face .content .field-wrapper textarea {
-    -webkit-appearance: none;
-    appearance: none;
-  }
-  .face .content .field-wrapper input[type=text]:focus, .face .content .field-wrapper input[type=password]:focus, .face .content .field-wrapper input[type=submit]:focus, .face .content .field-wrapper textarea:focus {
-    outline: none;
-  }
-  .face .content .field-wrapper input[type=text], .face .content .field-wrapper input[type=password], .face .content .field-wrapper textarea {
-    width: 100%;
-    border: none;
-    background: transparent;
-    line-height: 2em;
-    border-bottom: 1px solid var(--blue1);
-    color: #666;
-  }
-  .face .content .field-wrapper input[type=text]::-webkit-input-placeholder, .face .content .field-wrapper input[type=password]::-webkit-input-placeholder, .face .content .field-wrapper textarea::-webkit-input-placeholder {
-    opacity: 0;
-  }
-  .face .content .field-wrapper input[type=text]::-moz-placeholder, .face .content .field-wrapper input[type=password]::-moz-placeholder, .face .content .field-wrapper textarea::-moz-placeholder {
-    opacity: 0;
-  }
-  .face .content .field-wrapper input[type=text]:-ms-input-placeholder, .face .content .field-wrapper input[type=password]:-ms-input-placeholder, .face .content .field-wrapper textarea:-ms-input-placeholder {
-    opacity: 0;
-  }
-  .face .content .field-wrapper input[type=text]:-moz-placeholder, .face .content .field-wrapper input[type=password]:-moz-placeholder, .face .content .field-wrapper textarea:-moz-placeholder {
-    opacity: 0;
-  }
-  .face .content .field-wrapper input[type=text]:focus + label, .face .content .field-wrapper input[type=text]:not(:placeholder-shown) + label, .face .content .field-wrapper input[type=password]:focus + label, .face .content .field-wrapper input[type=password]:not(:placeholder-shown) + label, .face .content .field-wrapper textarea:focus + label, .face .content .field-wrapper textarea:not(:placeholder-shown) + label {
-    top: -35%;
-    color: #42509e;
-  }
-  .face .content .field-wrapper input[type=submit] {
+  .icon-holder{
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 3em ;
+    margin-bottom: 3em ;
     
   }
-
-  .form-button{
-    -webkit-appearance: none;
-    appearance: none;
-    cursor: pointer;
-    width: 47%;
-    background: #07ad90;
-    line-height: 2em;
-    color: #fff;
-    border: 1px solid #07ad90;
-    border-radius: 3px;
-    padding: 5px;
+  .icon-holder img{
+    
   }
-  .form-button:hover{
-    opacity: 0.9;
-  }
-
-  .form-button:active{
-    transform: scale(0.96);
-  }
-  .form-wrapper{
-    margin-top: 5em;
-  }
-  .face .content .field-wrapper textarea {
-    resize: none;
-    line-height: 1em;
-  }
-  .face .content .field-wrapper textarea:focus + label, .face .content .field-wrapper textarea:not(:placeholder-shown) + label {
-    top: -25%;
-  }
- 
-  .face-front {
-    margin-left: 27%;
-    width: 30%;
-    margin-top: 3%;
-  }
-  
-  
-  .nav {
-    margin: 20px 0;
-    padding: 0;
-  }
-  .nav li {
+  .big-button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 29px;
+    text-align: left;
+    text-decoration: none;
     display: inline-block;
-    list-style-type: none;
-    font-size: 1em;
-    margin: 0 10px;
-    color: #42509e;
-    position: relative;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 75%;
+    transition-duration: 0.4s;
     cursor: pointer;
-  }
-  .nav li:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 20px;
-    border-bottom: 1px solid #42509e;
-    transition: all ease-in 0.25s;
-  }
-  .nav li:hover:after {
-    width: 100%;
-  }
-  
-  .psw, .signup, .singin {
-    display: block;
-    margin: 20px 0;
-    font-size: 0.75em;
+    padding: 20px 0;
     text-align: center;
-    color: #42509e;
-    cursor: pointer;
+    font-size: 2.5em;
+  }
+  .big-button1{
+    background-color: white; 
+    color: var(--blue1); 
+    border: 2px solid var(--blue1);
+    border-radius: 2%;
+  }
+  .big-button1:hover{
+    background-color:var(--black);
+    border: 2px solid var(--black);
+    color: white;
   }
   
-  small {
-    font-size: 0.7em;
-  }
-  
-  @-webkit-keyframes success {
-    from {
-      -webkit-transform: translate(-50%, -50%) rotate(0) scale(0);
-    }
-    to {
-      -webkit-transform: translate(-50%, -50%) rotate(-45deg) scale(1);
-    }
-  }
