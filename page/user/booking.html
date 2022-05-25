@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/asset/css/bootstrap.min.css"
+    />
+
+    <!-- Custom stlylesheet -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/asset/css/style_booking.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/asset/css/booking.css" />
+    <link rel="icon" href="/asset/image/logo.png" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>PRESS AN MEDIA OFFICE</title>
+  </head>
+  <body>
+    <!--------------------------------- HEADER OPEN --------------------------->
+    <div class="header" style="cursor: default" id="main-header">
+      <a class="logo">LỊCH ĐĂNG KÍ SỬ DỤNG ĐỊA ĐIỂM</a>
+      <div class="header-right">
+        <a class="active" id="login" href="#">Đăng xuất</a>
+      </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <div class="side-logo-hcmute">
+        <img src="/asset/image/logo.png" style="width: 95px" alt="HCMUTE" />
+      </div>
+      <div class="side-logo-pmo">
+        <img src="/asset/image/pmo.png" style="width: 100px" alt="HCMUTE" />
+      </div>
+      <div class="side-tag">
+        <p class="tag-name">DANH MỤC</p>
+      </div>
+      <button class="button1 button2">TRANG CHỦ</button>
+      <button class="button1 button2">LỊCH ĐĂNG KÍ</button>
+      <button class="button1 button2">ĐỔI MẬT KHẨU</button>
+      <button class="button1 button2">DANH SÁCH ĐƠN VỊ</button>
+      <button class="button1 button2">DANH SÁCH TÀI KHOẢN</button>
+      <button class="button1 button2">DUYỆT - XÁC NHẬN</button>
+    </div>
+    <div id="main">
+      <div class="booking-form">
+        <div class="booking-header">
+          <p>ĐĂNG KÍ MƯỢN PHÒNG</p>
+        </div>
+        <form>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <input class="form-control" type="text" />
+                <span class="form-label">Loại phòng</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="form-group">
+                <span class="form-label">Guests</span>
+                <select class="form-control">
+                  <option>1 Person</option>
+                  <option>2 People</option>
+                  <option>3 P eople</option>
+                </select>
+                <span class="select-arrow"></span>
+              </div>
+            </div>
+          </div> -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <input class="form-control" type="date" required />
+                <span class="form-label">Ngày mượn</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <input class="form-control" type="date" required />
+                <span class="form-label">Ngày trả</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <input class="form-control" type="text" />
+                <span class="form-label">Tên chương trình</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <input class="form-control" type="text" />
+                <span class="form-label">Lý do</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-btn">
+            <button class="submit-btn">Đăng kí</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "245px";
+      document.getElementById("main-header").style.marginLeft = "260px";
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+      // When the user clicks the button, open the modal
+    </script>
+  </body>
+</html>
