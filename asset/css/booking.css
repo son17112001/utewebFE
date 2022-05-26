@@ -21,6 +21,9 @@
     --size-bezel: .5rem;
     --size-radius: 4px;
   }
+
+  
+  
   
   @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
   html {
@@ -383,6 +386,13 @@
     background-color: var(--black);
     border: 2px solid var(--black);
     color: white;
+  }
+  .button3{
+    background-color: #3e4095;
+    border: 2px solid #3e4095;
+    color: white;
+    border-radius: 2%;
+    margin-left: 2%;
   }
   
   .icon-holder {

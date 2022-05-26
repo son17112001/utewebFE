@@ -385,6 +385,15 @@ input[type="password"]::input-placeholder {
   color: white;
 }
 
+.button3{
+  background-color: var(--blue1);
+  border: 2px solid var(--blue1);
+  color: white;
+  border-radius: 2%;
+  margin-left: 2%;
+}
+
+
 .icon-holder {
   width: 80%;
   margin-left: 20%;
