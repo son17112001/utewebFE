@@ -511,3 +511,12 @@
      font-weight: bolder;
      text-align: center;
   }
+  .text-holder text{
+    color: white;
+    font-size: 1.8rem;
+  }
+  .text-holder{
+    text-decoration: none;
+    margin-left: 40%;
+    font-style:normal !important;
+  }
